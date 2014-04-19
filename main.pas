@@ -18,7 +18,7 @@ urls:array[0..5] of pgchar = ('http://77.73.90.46:1055/avtoradio',
 				'http://radio.north.kz:8000/russian-128.m3u',
 				'http://radio.north.kz:8000/rmaximum.m3u',
 				'http://ep128server.streamr.ru:8030/ep128',
-				'http://sradio.ru/stream/3.m3u',
+				'',
 				'http://89.20.132.26:8000/v5_1');
 
 images:array[0..5] of pgchar = ('images/auto.jpg','images/rusradio.jpg','images/maximum.jpg','images/europa+.jpg','images/hit.jpg','images/ufm.jpg');
