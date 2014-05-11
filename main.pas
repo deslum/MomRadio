@@ -6,7 +6,7 @@ uses cthreads,cmem,heaptrc,gtk2,gdk2,glib2,gdk2pixbuf,bass,classes;
 
 
 const
-titles:array[0..5] of ^gchar = ('Авторадио',				
+Titles:array[0..5] of ^gchar = ('Авторадио',				
 				'Русское радио',
 				'Радио Максимум',
 				'Европа плюс',
@@ -14,18 +14,18 @@ titles:array[0..5] of ^gchar = ('Авторадио',
 				'Юмор FM');
 
 
-urls:array[0..5] of pgchar = ('http://77.73.90.46:1055/avtoradio',
+Urls:array[0..5] of pgchar = ('http://77.73.90.46:1055/avtoradio',
 				'http://radio.north.kz:8000/russian-128.m3u',
 				'http://radio.north.kz:8000/rmaximum.m3u',
 				'http://ep128server.streamr.ru:8030/ep128',
 				'',
 				'http://89.20.132.26:8000/v5_1');
 
-images:array[0..5] of pgchar = ('images/auto.jpg','images/rusradio.jpg','images/maximum.jpg','images/europa+.jpg','images/hit.jpg','images/ufm.jpg');
+Images:array[0..5] of pgchar = ('images/auto.jpg','images/rusradio.jpg','images/maximum.jpg','images/europa+.jpg','images/hit.jpg','images/ufm.jpg');
 
 
 type
- xz = (PIXBUF_COL,TEXT_COL);
+ XZ = (PIXBUF_COL,TEXT_COL);
 
 Type
     TMyThread = class(TThread)
