@@ -118,15 +118,21 @@ var
  iter:TGtkTreeIter;
  model:pGtkTreeModel;
  n,m:string;
- name:^gchar;
+ name:^gChar;
  i:0..5;
 begin
- model:= gtk_tree_view_get_model(treeview);
- if (gtk_tree_model_get_iter(model,@iter,path)) then begin
-  gtk_tree_model_get(model,@iter,TEXT_COL,@name,-1);
-  n:=name;
-  if (MyThread<>nil) then free();
-  for i:=0 to 5 do begin m:=titles[i];if (m=n) then PlayStream(urls[i]);end;
+ model:= gtk_tree_view_get_model(Treeview);
+ if (gtk_tree_model_get_iter(Model,@iter,Path)) then
+ begin
+  gtk_tree_model_get(Model,@iter,TEXT_COL,@name,-1);
+  N:=Name;
+  if (MyThread<>nil) then Free();
+  for i:=0 to 5 do 
+  begin 
+  	m:=Titles[i];
+  	if (m=n) then 
+  		PlayStream(Urls[i]);
+  end;
  end;
 end;
 
