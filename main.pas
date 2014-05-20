@@ -1,6 +1,6 @@
 program MomRadio;
 
-{$mode delphi}{$h+}
+{$mode fpc}{$h+}
 
 uses cthreads,cmem,heaptrc,gtk2,gdk2,glib2,gdk2pixbuf,bass,classes;
 
